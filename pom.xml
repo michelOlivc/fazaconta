@@ -11,7 +11,7 @@
 	<groupId>com.fazaconta</groupId>
 	<artifactId>fazaconta</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>fazaconta</name>
 	<description>Faz a Conta API</description>
 
