@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fazaconta.api.data.ProductRepository;
@@ -31,8 +32,8 @@ public class ProductController {
 		return productRepository.findAll();
 	}
 	
-	@GetMapping("/product?name={name}")
-	public Page<Product> findProductsByName(String name) {
+	@GetMapping("/product")
+	public Page<Product> findProductsByName(@RequestParam("name") String name) {
 		return productRepository.findProductsByName(name);
 	}
 	
