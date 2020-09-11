@@ -2,6 +2,7 @@ package com.fazaconta.api.controller;
 
 import java.util.List;
 
+import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,6 +29,11 @@ public class ProductController {
 	@GetMapping("/product")
 	public List<Product> all() {
 		return productRepository.findAll();
+	}
+	
+	@GetMapping("/product?name={name}")
+	public Page<Product> findProductsByName(String name) {
+		return productRepository.findProductsByName(name);
 	}
 	
 	@PostMapping("/product")
