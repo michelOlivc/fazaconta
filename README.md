@@ -1,7 +1,7 @@
 # Faz a Conta API
 O projeto se trata de uma API desenvolvida em Java utilizando o framework Spring Boot e banco de dados PostgreSQL para persistência. 
 A API foi desenvolvida para fins de estudo do framework e segue sendo utilizada para esse propósito. 
-Todos os recursos necessários para rodar a aplicação já se encontram em execução em um servidor Heroku, mas é possível rodar o projeto em servidor local seguindo as instruções abaixo. Apenas o banco de dados não se encontra disponível por outra fonte se não a do servidor cloud, porém não é necessária nenhuma alteração no código-fonte para utilizá-lo.
+Todos os recursos necessários para rodar a aplicação já se encontram em execução em um servidor Heroku disponível através do link https://faz-a-conta.herokuapp.com/product, mas é possível rodar o projeto em servidor local seguindo as instruções abaixo. Apenas o banco de dados não se encontra disponível por outra fonte se não a do servidor cloud, porém não é necessária nenhuma alteração no código-fonte para utilizá-lo.
 
 Instruções para executar a aplicação em servidor local:
 
