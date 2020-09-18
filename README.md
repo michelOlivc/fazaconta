@@ -23,17 +23,13 @@ Retorna em formato json um objeto correspondente ao ID na URL.
 
 POST - /product
 
-Exemplo de objeto enviado no corpo da requisição:
-
-{ name: "Biscoito", price: 2.90 }
+Exemplo de objeto enviado no corpo da requisição: { name: "Biscoito", price: 2.90 }
 
 Salva o objeto em formato json enviado no corpo da requisição e preenche o ID com o próximo sequencial da tabela do banco de dados.
 
 PUT - /product/{id}
 
-Exemplo de objeto enviado no corpo da requisição:
-
-{ id: 3, name: "Biscoito", price: 2.90 }
+Exemplo de objeto enviado no corpo da requisição: { id: 3, name: "Biscoito", price: 2.90 }
 
 Atualiza as informações do registro com ID correspondente ao da URL, usando os dados do objeto em formato json enviado no corpo da requisição.
 
